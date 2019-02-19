@@ -5,7 +5,7 @@ function setup() {
   particles = [];
 }
 
-function mouseDragged(){
+function mouseIsPressed(){
   particles[particles.length] = new Particle(mouseX, mouseY, dist(pmouseX, pmouseY, mouseX, mouseY));
 }
 
