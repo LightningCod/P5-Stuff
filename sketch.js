@@ -1,7 +1,7 @@
 let particles;
 
 function setup() {
-  createCanvas(640, 480);
+  createCanvas(1280, 720);
   particles = [];
 }
 
@@ -27,13 +27,11 @@ class Particle {
     this.r = random(0, 255);
     this.g = random(0, 255);
     this.b = random(0, 255);
-    this.a = random(0, 255);
-
   }
 
   show(){
     noStroke();
-    fill(this.r, this.g, this.b, this.a);
+    fill(this.r, this.g, this.b, 255);
     ellipse(this.pos.x, this.pos.y, this.w);
   }
 }
