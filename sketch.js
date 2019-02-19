@@ -11,9 +11,7 @@ function mouseDragged(){
 
 function draw() {
   background(0);
-  particles.forEach(particle => {
-    particle.show();
-  });
+  particles.forEach(particle => particle.show());
   fill(255,0,0);
   textSize(100);
   stroke(0);
